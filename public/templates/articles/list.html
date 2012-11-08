@@ -1,0 +1,7 @@
+<% _.each(articles, function(article) { %>
+<h1 class="title"><%= article.get('title') %></h1>
+<pre class="article"><%= article.get('body') %></pre>
+<em class="date"><%= moment(article.get('date')).fromNow() %></em>
+
+
+<% }); %>
